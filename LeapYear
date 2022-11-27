@@ -1,17 +1,25 @@
-#include <stdio.h>//vivliothiki
+#include <stdio.h>
+int main() {
+   int year;
+   printf("Enter a year: ");
+   scanf("%d", &year);
 
-int main(){//kuria sinartisi
-int a;//orizoume mia metavliti
-printf("Enter the year:");
-scanf("%d",&a);//pliktrologi o xristis ena etos
-if (a%4==0)//kanoume ton elegxo
-{
-   printf("The year is leap\n");
-}
-else
-{
-    printf("The year in not a leap\n");
-}
+  
+   if (year % 400 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   
+   else if (year % 100 == 0) {
+      printf("%d is not a leap year.", year);
+   }
+   
+   else if (year % 4 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   // 
+   else {
+      printf("%d is not a leap year.", year);
+   }
 
-
+   return 0;
 }
